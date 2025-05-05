@@ -4,6 +4,7 @@ import "primeicons/primeicons.css"
 import "primeflex/themes/primeone-light.css"
 import "primeflex/primeflex.css"
 import "./assets/styles/global.css"
+import "./assets/styles/layout.css"
 import Paths from "./routes/Paths";
 
 const App = () => {
