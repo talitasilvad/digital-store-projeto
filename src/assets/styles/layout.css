@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+header{
+    max-width: 75rem;
+    padding: 1.5rem 2rem;
+    margin: 0 auto;
+}
+
+
+img.header-logo{
+    width: 15rem;
+    height: 2.75rem;
+    margin-right: 1rem;
+}
+
+/* HEADER-SEARCH */
+.header-search input{
+    width: 35rem;
+    padding: 0.955rem;
+    margin-left: 0.5rem;
+    background-color: #47474707;
+    border-radius: 8px;
+    border: none;
+}
+
+.header-search input::placeholder{
+    font-family: var(--font-principal);
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.75px;
+    color: #6666668e;
+}
+
+.p-icon-field-right > .p-input-icon:last-of-type{
+    color: #6666668e;
+}
+
+.p-icon-field > .p-input-icon{
+    font-size: 1.173rem;
+    top: 32%;
+}
+/* HEADER-SEARCH */
+
+a.register{
+    margin: 0 1rem 0 1.9rem;
+    font-family: var(--font-principal);
+    font-weight: 400;
+    font-size: 0.9rem;
+    letter-spacing: 0.75px;
+    color: var(--color-dark-gray-2) ;
+}
+
+/* HEADER BUTTON */
+.p-button{
+    font-family: var(--font-principal);
+    font-weight: 700;
+    margin-right: 1rem;
+    font-size: 0.875rem;
+    letter-spacing: 0.75px;
+    border: none;
+    background-color: var(--color-primary);
+}
+
+.py-2{
+    padding-top: 0.6rem !important;
+    padding-bottom: 0.6rem !important;
+}
+/* HEADER BUTTON */
+
+img.header-cart{
+    cursor: pointer;
+    width: 1.4rem;
+    height: 3rem;
+    margin-left: 1.4rem;
+}
+
+.header-nav li{
+    margin: 2rem 1rem 0 0;
+    list-style: none;
+ }
+
+.header-nav a{
+    font-family: var(--font-principal);
+    font-weight: 500;
+    letter-spacing: 0.75px;
+    position: relative;
+    text-decoration: none;
+    color: var(--color-dark-gray-2);
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.header-nav a.active,
+.header-nav a:hover {
+    font-family: var(--font-principal);
+    font-weight: 700;
+    letter-spacing: 0.75px;
+    color: var(--color-primary);
+    
+}
+
+.header-nav a::after{
+    content: '';
+    position: absolute;
+    bottom: -0.3rem;
+    left: 0;
+    width: 0;
+    height: 0.2rem;
+    background-color: var(--color-primary);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.header-nav li:hover a::after,
+.header-nav a.active::after {
+    width: 100%;
+}
+
+
+

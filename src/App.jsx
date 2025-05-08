@@ -1,4 +1,4 @@
-import "primereact/resources/themes/fluent-light/theme.css"
+import "primereact/resources/themes/lara-light-pink/theme.css"
 import "primereact/resources/primereact.min.css"
 import "primeicons/primeicons.css"
 import "primeflex/themes/primeone-light.css"
