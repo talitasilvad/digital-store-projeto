@@ -1,0 +1,28 @@
+.divSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 1rem 2rem;
+}
+
+.center .title{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.left .title{
+    text-align: left;
+}
+
+.title{
+    font-family: var(--font-principal);
+    color: var(--color-dark-gray-2);
+    font-size: 1.5rem;
+}
+
+.link{
+    color: var(--color-primary);
+    font-size: 1.125rem;
+    text-decoration: none;
+}

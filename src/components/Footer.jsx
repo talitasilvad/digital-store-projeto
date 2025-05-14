@@ -11,7 +11,7 @@ const Footer = () => {
           <footer className={styles.footer}>
                 <div className={styles.footerContent}>
                   <div className={styles.footercompany}>
-                    <Logo variant="footerWhite" width={253} height={44} />
+                    <Logo variant="footerWhite"/>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
                     </p>
                     <nav className={styles.navSocial}>
@@ -34,7 +34,7 @@ const Footer = () => {
                 </div>
                     <hr />
                 <div className={styles.footerbottom}>
-                    <p>© 2024 Digital Store</p>
+                    <p>© 2025 Digital Store</p>
                 </div>
           </footer>
      );

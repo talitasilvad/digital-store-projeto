@@ -1,7 +1,13 @@
 .header{
     width: 100%;
-    max-width: 75rem;
+    position: fixed;
+    z-index: 1000;
     padding: 1.5rem 2rem;
+    background-color: var(--color-white);
+}
+
+.headerContainer{
+    max-width: 75rem;
     margin: 0 auto;
 }
 

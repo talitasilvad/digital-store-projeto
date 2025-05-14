@@ -56,41 +56,42 @@ const Header = () => {
     return ( 
         <>
         <header className={styles.header}>
-              <div className="flex align-items-center justify-content-between">
-                  <Logo variant="headerPink" width={253} height={44} />
-                  <div className={styles.headerSearch}>
-                  <IconField iconPosition="right">
-                    <InputIcon className="pi pi-search" />
-                    <InputText
-                      value={search}
-                      onChange={(e) => setSearch(e.target.value)}
-                      placeholder="Pesquisar produto..."
-                    />
-                  </IconField>
-                </div>
+              <div className={styles.headerContainer}>
+                <div className="flex align-items-center justify-content-between">
+                    <Logo variant="headerPink"/>
+                    <div className={styles.headerSearch}>
+                    <IconField iconPosition="right">
+                      <InputIcon className="pi pi-search" />
+                      <InputText
+                        value={search}
+                        onChange={(e) => setSearch(e.target.value)}
+                        placeholder="Pesquisar produto..."
+                      />
+                    </IconField>
+                  </div>
                 
-                    <NavLink to={"/cadastro"} className={styles.register}>
-                      Cadastre-se
-                    </NavLink>
-                    <a href="#" target="_self" rel="noopener noreferrer" 
-                    className="no-underline p-button border-round-md py-2 px-4">
-                      Entrar
-                    </a>
-
-                      <div className='relative'>
-                      <img className={styles.cartImg} src="/src/assets/img/mini-cart.svg" alt="Carrinho de compra" />
-                      <span className="text-white text-xs font-bold border-circle px-2 py-1 absolute"
-                            style={{right: "-37%", backgroundColor: "var(--color-error)"}}>2</span>
-                    </div>
-                </div>
-                <Nav>
-                    <NavList>
-                      <li><StyledNavLink to={"/"}>Home</StyledNavLink></li>
-                      <li><StyledNavLink to={"/produtos"}>Produtos</StyledNavLink></li>
-                      <li><StyledNavLink to={"/categorias"}>Categorias</StyledNavLink></li>
-                      <li><StyledNavLink to={"/pedidos"}>Meus Pedidos</StyledNavLink></li>
-                    </NavList>
-                </Nav>
+                      <NavLink to={"/cadastro"} className={styles.register}>
+                        Cadastre-se
+                      </NavLink>
+                      <a href="#" target="_self" rel="noopener noreferrer"
+                      className="no-underline p-button border-round-md py-2 px-4">
+                        Entrar
+                      </a>
+                        <div className="relative">
+                        <img className={styles.cartImg} src="/src/assets/img/mini-cart.svg" alt="Carrinho de compra" />
+                        <span className="text-white text-xs font-bold border-circle px-2 py-1 absolute"
+                              style={{right: "-37%", backgroundColor: "var(--color-error)"}}>2</span>
+                      </div>
+                  </div>
+                  <Nav>
+                      <NavList>
+                        <li><StyledNavLink to={"/"}>Home</StyledNavLink></li>
+                        <li><StyledNavLink to={"/produtos"}>Produtos</StyledNavLink></li>
+                        <li><StyledNavLink to={"/categorias"}>Categorias</StyledNavLink></li>
+                        <li><StyledNavLink to={"/pedidos"}>Meus Pedidos</StyledNavLink></li>
+                      </NavList>
+                  </Nav>
+              </div>
           </header>
         </>
      );
