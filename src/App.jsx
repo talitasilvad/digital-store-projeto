@@ -6,7 +6,7 @@ import "primeflex/primeflex.css"
 import "./assets/styles/global.css"
 import Paths from "./routes/Paths";
 
-import Section from "./components/Section"
+import Section from "./components/Section/Section"
 
 
 const App = () => {
@@ -15,8 +15,8 @@ const App = () => {
      <Paths/>
 
      {/* AQUI É PARA TESTAR A SECTION, DEPOIS RETIRAR*/}
-     {/* <div>
-      <Section
+     <div>
+      {/* <Section
         title="com link e titulo alinhado center"
         titleAlign="center"
         link={{ href: "#", text: "Ver mais" }}>
@@ -31,8 +31,8 @@ const App = () => {
       <Section 
       title="com link e sem titleAlign"
       link={{ href: "#", text: "Ver mais" }}>
-      </Section>
-    </div> */}
+      </Section> */}
+    </div>
     </>
    );
 }

@@ -1,9 +1,9 @@
 import styles from './Footer.module.css'
-import Information, { informationLinks, categoryLinks, contacLinks } from "./Information"; 
-import Logo from "./Logo";
-import facebookIcon from "../assets/img/facebook.svg";
-import instagramIcon from "../assets/img/instagram.svg";
-import twitterIcon from "../assets/img/twitter.svg"
+import Information, { informationLinks, categoryLinks, contacLinks } from "../Information"; 
+import Logo from "../Logo";
+import facebookIcon from "../../assets/img/facebook.svg";
+import instagramIcon from "../../assets/img/instagram.svg";
+import twitterIcon from "../../assets/img/twitter.svg"
 
 
 const Footer = () => {

@@ -5,7 +5,7 @@ import { IconField } from 'primereact/iconfield';
 import { InputIcon } from 'primereact/inputicon';
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
-import Logo from './Logo';
+import Logo from "../Logo";
 
 const Nav = styled.nav`
 margin: 2rem 1rem 0 0;
