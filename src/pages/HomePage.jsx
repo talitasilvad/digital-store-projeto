@@ -8,11 +8,9 @@ const HomePage = () => {
              <Gallery 
              images={homeSlide} 
              width="100%" 
-             height="auto" 
+             height="661px" 
              className="slideGallery"
-             padding="5rem 3rem 1rem 3rem"
-             marginTop="5rem"
-             
+             padding="5rem 10rem"      
              />
           </div>
         </>

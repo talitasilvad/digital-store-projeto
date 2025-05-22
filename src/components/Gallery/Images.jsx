@@ -1,4 +1,9 @@
 export const homeSlide = [
+
+    {
+        custom: true // SLIDE PERSONALIZADO
+    },
+
     {"src": "/public/produtosImg/home-slide-1.jpeg"},
 
     {"src": "/public/produtosImg/home-slide-2.jpeg"},
