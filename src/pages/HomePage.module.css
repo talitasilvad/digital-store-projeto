@@ -1,0 +1,137 @@
+.homeCollections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-left: 3.5rem;
+}
+
+.homeCard{
+    position: relative;
+}
+
+span.homeSale{
+    font-family: var(--font-principal);
+    color: var(--color-dark-gray-2);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.homeSale{
+    position: absolute;
+    top: 0.4rem;
+    left: 1.2rem;
+    margin: 10px;
+    padding: 7px 12px;
+    border-radius: 29px ;
+    background-color: #E7FF86;
+}
+
+.homeCard img{
+    border-radius: 5px;
+}
+
+.homeCard a{
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    bottom: 5rem;
+    left: 2rem;
+}
+
+.homeIconsContainer{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 9rem;
+    
+}
+
+.homeIcons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.capIcon{
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+.capIcon:hover::after{
+    border: 2px solid var(--color-primary);
+    box-shadow: 0 0 12px #ff94c8b4;
+}
+
+.capIcon::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: border 0.4s ease;
+}
+
+.homeIconsCap{
+    width: 86px;
+    height: 86px;
+}
+
+p.pCap{
+    position: absolute;
+    bottom: 0.1px;
+}
+
+img.homeIconsCap{
+    background-color: var(--color-white);
+    border-radius: 50%;
+    padding: 7px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.iconWrapper{
+    background-color: var(--color-white);
+    border-radius: 50%;
+    padding: 1.2rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05); 
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+.iconWrapper::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: border 0.4s ease;
+}
+
+.iconWrapper:hover::after{
+    border: 2px solid var(--color-primary);
+    box-shadow: 0 0 12px #ff94c8b4;
+}
+
+.iconWrapper img{
+    width: 48px;
+    height: auto;
+}
+
+.homeIcons p{
+    font-family: var(--font-principal);
+    color: var(--color-dark-gray-2);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.75px;
+    transition: all 0.1s ease;
+}
+
+.homeIcons p:hover{
+    color: var(--color-primary);
+}
