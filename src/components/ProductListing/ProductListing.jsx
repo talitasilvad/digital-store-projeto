@@ -3,7 +3,7 @@ import ProductCard from "../ProductCard/ProductCard";
 const ProductListing = ({products}) => {
     return ( 
         <>
-          <section className="flex flex-wrap justify-content-center">
+          <section className="flex flex-wrap overflow-hidden gap-7 ml-6">
             {products.map((product, index) => (
                  <ProductCard
                     key={index}

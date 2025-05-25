@@ -6,6 +6,10 @@
     margin-left: 3.5rem;
 }
 
+/* section{
+    margin-top: 2rem;
+} */
+
 .homeCard{
     position: relative;
 }
@@ -42,7 +46,7 @@ span.homeSale{
     display: flex;
     justify-content: center;
     gap: 3rem;
-    margin-bottom: 9rem;
+    margin-bottom: 4rem;
     
 }
 
@@ -134,4 +138,54 @@ img.homeIconsCap{
 
 .homeIcons p:hover{
     color: var(--color-primary);
+}
+
+.endHomePage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 7rem;
+    padding: 4rem;
+    background-color: var(--color-white);
+    position: relative;
+}
+
+.shoesImg{
+    position: relative;
+    z-index: 1;
+}
+
+.imgBackground{
+    position: absolute;
+    top: 2rem;
+    left: 9rem;
+    z-index: 0;
+}
+
+.endP{
+    font-family: var(--color-primary);
+    color: var(--color-primary);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.75px;
+    margin-bottom: 1rem;
+}
+
+.endOffer h2{
+    font-family: var(--font-principal);
+    color: var(--color-dark-gray-2);
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.endPtext{
+    font-family: var(--font-principal);
+    color: var(--color-dark-gray-2);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.75px;
+    margin-bottom: 2rem
 }

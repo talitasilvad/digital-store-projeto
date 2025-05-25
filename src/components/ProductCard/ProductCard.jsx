@@ -3,9 +3,9 @@ import styles from "./ProductCard.module.css"
 const ProductCard = ({imagem, name, category, price, priceDiscount}) => {
     return ( 
         <>
-          <section className={styles.carSection}>
+          <section>
               <div className={styles.divCard}>
-                  <div className={styles.divCarImg}>
+                  <div className={styles.divCardImg}>
                      <img className={styles.cardImg} src={imagem} alt="" />
                   </div>
                     <h6 className={styles.cardCategory}>{category}</h6>

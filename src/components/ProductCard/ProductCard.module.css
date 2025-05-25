@@ -1,23 +1,30 @@
 .divCard{
-    width: 332px;
-    height: 439px;
-    padding: 1rem;
+    width: 100%;
+    height: auto;
 }
 
-.divCarImg{
+.divCardImg{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 252px;
+    align-items: center;
+    width: 270px;
     height: 300px;
     background-color: var(--color-white);
     border-radius: 10px;
 }
 
 .cardImg{
-    width: 252px;
-    height: 300px;
-    object-fit: contain;
+    width: 242px;
+    height: 270px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+img.cardImg:hover{
+    transform: scale(1.02);
+    cursor: pointer;
 }
 
 .cardCategory{

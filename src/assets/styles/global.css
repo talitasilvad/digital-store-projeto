@@ -26,6 +26,8 @@
 }
 
 main {
+  max-width: 1440px;
   background-color: #F9F8FE;
-  padding-top: 6.5rem;
+  padding-top: 6.1rem;
+  cursor: default;
 }
