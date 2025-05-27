@@ -1,0 +1,55 @@
+.ProductListingPage{
+
+}
+
+.customDropdown {
+  display: flex;
+  align-items: center;
+  width: 308px;
+  height: 60px;
+  border: 1px solid var(--color-dark-gray-2);
+  border-radius: 4px;
+  padding: 0 1rem;
+  background-color: transparent;
+  position: relative;
+}
+
+.fixedDropdown {
+    font-family: var(--font-principal); 
+    color: var(--color-dark-gray-2);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.75px;
+    margin-right: 8px;
+    white-space: nowrap;
+}
+
+:global(.p-dropdown){
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+    gap: 3rem;
+}
+
+:global(.p-dropdown .p-dropdown-trigger){
+    position: absolute;
+    top: 2px;
+    left: 8rem;
+}
+
+:global(.p-inputtext){
+    font-family: var(--font-principal);
+    color: var(--color-dark-gray-2);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.75px;
+}
+
+
+.filterProducts{
+    width: 308px;
+    height: auto;
+    padding: 1rem;
+    background-color: var(--color-white);
+}

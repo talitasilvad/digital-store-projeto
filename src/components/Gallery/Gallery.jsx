@@ -56,8 +56,7 @@ const Gallery = ({images, showThumbs, width, height, padding, radius, className}
           <div>
               <Galleria 
               value={images} 
-              responsiveOptions={responsiveOptions} 
-              lazy={true}
+              responsiveOptions={responsiveOptions}
               numVisible={5} circular className={styles[className]}
               showItemNavigators showThumbnails={!!showThumbs} 
               item={itemTemplate} 
