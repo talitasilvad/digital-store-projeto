@@ -1,5 +1,5 @@
 import styles from './Footer.module.css'
-import Information, { informationLinks, categoryLinks, contacLinks } from "../Information"; 
+import Information, { informationLinks, categoryLinks, contacLinks } from "../InformationData"; 
 import Logo from "../Logo";
 import facebookIcon from "../../assets/img/facebook.svg";
 import instagramIcon from "../../assets/img/instagram.svg";

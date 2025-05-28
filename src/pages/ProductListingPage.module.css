@@ -1,5 +1,16 @@
-.ProductListingPage{
+.productListingPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    margin-top: 5rem;
+    gap: 40rem;
+}
 
+.productListingPage hr{
+    width: 248px;
+    margin-top: 1rem;
+    border: 1px solid var(--color-light-gray-2) ;
 }
 
 .customDropdown {
@@ -48,8 +59,25 @@
 
 
 .filterProducts{
-    width: 308px;
-    height: auto;
-    padding: 1rem;
+    width: 50%;
+    height: 708px;
+    padding: 2rem;
+    margin-left: 3.5rem;
+    border-radius: 4px;
     background-color: var(--color-white);
 }
+
+.filterTitle{
+    font-family: var(--font-principal);
+    color: var(--color-dark-gray-2);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.75px;
+}
+
+.filterGroup{
+    display: flex;
+}
+
+
+

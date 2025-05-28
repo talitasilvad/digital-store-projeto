@@ -1,0 +1,30 @@
+.filterGroup{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.groupTitle{
+    font-family: var(--font-principal);
+    color: var(--color-dark-gray-2);
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.75px;
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
+}
+
+.optionText{
+    font-family: var(--font-principal);
+    color: var(--color-dark-gray-2);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.25px;
+    margin-left: 5px;
+}
+
+.filterInput{
+    accent-color: var(--color-primary);
+    width: 20px;
+    height: 20px;
+}
