@@ -1,5 +1,5 @@
 import Gallery from "../components/Gallery/Gallery";
-import { homeSlide } from "../components/Gallery/Images";
+import { homeSlide } from "../components/Gallery/ImagesData";
 import Section from "../components/Section/Section";
 import ProductListing from "../components/ProductListing/ProductListing"
 import styles from "./HomePage.module.css"
