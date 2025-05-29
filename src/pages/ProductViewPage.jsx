@@ -1,7 +1,28 @@
+import BuyBox from "../components/BuyBox/BuyBox";
+import Gallery from "../components/Gallery/Gallery";
+import { producImage } from "../components/Gallery/ImagesData";
+
 const ProductViewPage = () => {
     return ( 
         <>
-          <h1 className="flex align-items-center justify-content-center bg-primary-100 h-18rem">aqui é a página de visualização do produto</h1>
+          <div className="flex">
+              <Gallery
+              images={producImage}
+              showThumbs
+              width="700px"
+              height="570px"
+              radius="4px"
+              className="viewGallery"
+              />
+              <BuyBox
+               name="Tênis Nike Revolution 6 Next Nature Masculino"
+               reference="Casual | Nike | REF:38416711"
+               rating="(90 avalições)"
+               price="219,00"
+               priceDiscount="300,00"
+               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+              />
+          </div>
         </>
      );
 }

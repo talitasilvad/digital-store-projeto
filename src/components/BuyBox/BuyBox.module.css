@@ -1,0 +1,95 @@
+.buyBoxContainer{
+    margin-top: 4rem;
+    max-width: 436px;
+}
+
+.nameProduct{
+    font-family: var(--font-principal);
+    color: var(--color-dark-gray);
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+.pReference{
+    font-family: var(--font-principal);
+    color: var(--color-dark-gray-3);
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.8rem;
+}
+
+:global(.p-rating .p-rating-item.p-rating-item-active .p-rating-icon){
+    color: var(--color-warning);
+}
+
+:global(.p-rating .p-rating-item .p-rating-icon){
+    color: var(--color-warning);
+}
+
+:global(.p-rating .p-rating-item.p-focus){
+    box-shadow: none;
+}
+
+.rating{
+    font-family: var(--font-principal);
+    color: var(--color-light-gray);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+}
+
+.prices{
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.moneySymbol{
+    position: relative;
+    font-family: var(--font-principal);
+    color: var(--color-dark-gray-2);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.75px;
+    top: 0.9rem;
+}
+
+.priceDiscounted{
+    font-family: var(--font-principal);
+    color: var(--color-light-gray);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.75px;
+    position: relative;
+    top: 0.9rem;
+    text-decoration: line-through;
+}
+
+.priceOriginal{
+    font-family: var(--font-principal);
+    color: var(--color-dark-gray-2);
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.descriptionText{
+    font-family: var(--font-principal);
+    color: var(--color-light-gray);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.75px;
+    margin-top: 1rem;
+}
+
+.description{
+    font-family: var(--font-principal);
+    color: var(--color-dark-gray-2);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    line-height: 22px;
+    margin-top: 0.5rem;
+}
