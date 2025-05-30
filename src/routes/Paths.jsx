@@ -3,6 +3,7 @@ import Layout from "../pages/Layout";
 import HomePage from "../pages/HomePage";
 import ProductListingPage from "../pages/ProductListingPage";
 import ProductViewPage from "../pages/ProductViewPage";
+import NotFound from "../components/NotFound";
 
 const Paths = () => {
     return ( 
@@ -14,6 +15,7 @@ const Paths = () => {
                    <Route path="/produtos" element={<ProductListingPage/>}/>
                    <Route path="/product/:id" element={<ProductViewPage/>}/>
                    </Route>
+                   <Route path="*" element={<NotFound/>}/>
                </Routes>
           </BrowserRouter>
         </>
