@@ -94,3 +94,16 @@
     margin-top: 4rem;
 }
 
+:global(.p-galleria-thumbnail-container){
+    all: unset;
+    padding: 1rem;
+}
+
+:global(.p-galleria-thumbnail-item){
+    opacity: unset;
+}
+
+:global(.p-galleria-thumbnail-prev),
+:global(.p-galleria-thumbnail-next) {
+  display: none;
+}

@@ -48,7 +48,7 @@ const Gallery = ({images, showThumbs, width, height, padding, radius, className}
     }
 
     const thumbnailTemplate = (item) => {
-        return <img src={item.src} alt="Imagem em miniatura do produto" style={{width: width, height: height, borderRadius: radius, display: 'block' }} />;
+        return <img src={item.src} alt="Imagem em miniatura do produto" style={{width: "118px", height: "96px", borderRadius: radius, display: 'block' }} />;
     }
 
     return ( 
