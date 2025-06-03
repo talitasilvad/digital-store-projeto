@@ -1,9 +1,8 @@
 import ProductOptions from "../ProductOptions/ProductOptions";
-import { sizesOptions } from "../ProductOptions/ProductOptionsData";
 import styles from "./BuyBox.module.css"
 import { Rating } from "primereact/rating";
 
-const BuyBox = ({name, reference, stars, rating, price, priceDiscount, description, children}) => {
+const BuyBox = ({name, reference, rating, price, priceDiscount, description, children}) => {
     return ( 
         <>
           <div className={styles.buyBoxContainer}>
@@ -30,7 +29,14 @@ const BuyBox = ({name, reference, stars, rating, price, priceDiscount, descripti
             <p className={styles.descriptionText}>Descrição do produto</p>
             <p className={styles.description}>{description}</p>
 
-            <ProductOptions options={sizesOptions}/>
+            {children}
+
+            <div className={styles.buttonBuyBox}>
+              <a href="#" target="_self" rel="noopener noreferrer"
+                        className="no-underline p-button border-round-md py-3 px-7">
+                          comprar
+                 </a>
+            </div>
           </div>
         </>
      );

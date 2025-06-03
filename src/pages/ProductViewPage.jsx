@@ -1,6 +1,8 @@
 import BuyBox from "../components/BuyBox/BuyBox";
 import Gallery from "../components/Gallery/Gallery";
 import { producImage } from "../components/Gallery/ImagesData";
+import ProductOptions from "../components/ProductOptions/ProductOptions";
+import { colorsOptions, sizesOptions } from "../components/ProductOptions/ProductOptionsData";
 
 const ProductViewPage = () => {
     return ( 
@@ -21,7 +23,10 @@ const ProductViewPage = () => {
                price="219,00"
                priceDiscount="300,00"
                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
-              />
+              >
+                <ProductOptions options={sizesOptions} type="text"/>
+                <ProductOptions options={colorsOptions} shape="circle"/>
+              </BuyBox>
           </div>
         </>
      );

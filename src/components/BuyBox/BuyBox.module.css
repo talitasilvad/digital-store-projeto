@@ -93,3 +93,9 @@
     line-height: 22px;
     margin-top: 0.5rem;
 }
+
+.buttonBuyBox a{
+    text-transform: uppercase;
+    background-color: var(--color-warning);
+    margin-top: 1rem;
+}
