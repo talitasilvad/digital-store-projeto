@@ -8,7 +8,8 @@ const Section = ({title, titleAlign = "left", link, children}) => {
                <div className={`${styles.divSection} ${alignText}`}>
                   <h4 className={styles.title}>{title}</h4>
                   {link && (
-                    <a className={styles.link} href={link.href}>{link.text}</a>
+                    <a className={styles.link} href={link.href}>{link.text} 
+                    <i className="pi pi-arrow-right" style={{ marginLeft: '1rem' }}></i></a>
                   )}
                </div>
                <div>

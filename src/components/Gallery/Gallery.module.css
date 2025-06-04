@@ -103,6 +103,11 @@
     opacity: unset;
 }
 
+:global(.p-galleria-thumbnail-items-container){
+    width: 90%;
+    justify-self: center;
+}
+
 :global(.p-galleria-thumbnail-prev),
 :global(.p-galleria-thumbnail-next) {
   display: none;

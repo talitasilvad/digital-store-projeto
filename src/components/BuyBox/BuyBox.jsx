@@ -33,7 +33,7 @@ const BuyBox = ({name, reference, rating, price, priceDiscount, description, chi
 
             <div className={styles.buttonBuyBox}>
               <a href="#" target="_self" rel="noopener noreferrer"
-                        className="no-underline p-button border-round-md py-3 px-7">
+                        className="no-underline p-button border-round-md py-3 px-7 hover:bg-yellow-500">
                           comprar
                  </a>
             </div>

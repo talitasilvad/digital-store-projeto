@@ -69,4 +69,53 @@ export const produtosAlta = [
         imagem: "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         price: "$340.00"
     },
+];
+
+
+export const produtosRelacionados = [
+    {
+        id: 1,
+        category: "Tênis",
+        name: "Tênis Nike Red",
+        imagem: "/public/produtosImg/product-thumb-1.jpeg",
+        price: "$149.99",
+        priceDiscount: "$200"
+    },
+
+    {
+        id: 2,
+        category: "Tênis",
+        name: "Tênis Nike Red",
+        imagem: "/public/produtosImg/product-thumb-2.jpeg",
+        price: "$149.99",
+        priceDiscount: "$200"
+    },
+
+    {
+        id: 3,
+        category: "Tênis",
+        name: "Tênis",
+        imagem: "/public/produtosImg/product-thumb-3.jpeg",
+        price: "$149.99",
+        priceDiscount: "$200"
+    },
+
+    {
+        id: 4,
+        category: "Tênis",
+        name: "Tênis",
+        imagem: "/public/produtosImg/product-thumb-4.jpeg",
+        price: "$149.99",
+        priceDiscount: "$200"
+    },
+
+    {
+        id: 5,
+        category: "Tênis",
+        name: "Tênis Nike Green",
+        imagem: "/public/produtosImg/product-thumb-5.jpeg",
+        price: "$149.99",
+        priceDiscount: "$200"
+    },
 ]
+

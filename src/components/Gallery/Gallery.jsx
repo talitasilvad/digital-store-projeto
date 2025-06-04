@@ -32,7 +32,7 @@ const Gallery = ({images, showThumbs, width, height, padding, radius, className}
                         </div>
                         <p className={styles.slideText}>Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
                         <a href="#" target="_self" rel="noopener noreferrer"
-                      className="no-underline p-button border-round-md py-3 px-7">
+                      className="no-underline p-button border-round-md py-3 px-7 hover:bg-pink-500">
                         Ver Ofertas
                       </a>
                     </div>

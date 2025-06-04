@@ -113,7 +113,7 @@ const HomePage = () => {
                <h2>Air Jordan edição de colecionador</h2>
                <p className={styles.endPtext}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
                <a href="#" target="_self" rel="noopener noreferrer"
-                      className="no-underline p-button border-round-md py-3 px-7">
+                      className="no-underline p-button border-round-md py-3 px-7 hover:bg-pink-500">
                         Ver Ofertas
                </a>
             </div>

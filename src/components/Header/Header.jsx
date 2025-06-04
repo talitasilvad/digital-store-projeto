@@ -3,7 +3,7 @@ import styles from './Header.module.css'
 import { InputText } from 'primereact/inputtext';
 import { IconField } from 'primereact/iconfield';
 import { InputIcon } from 'primereact/inputicon';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import Logo from "../Logo";
 
@@ -74,7 +74,7 @@ const Header = () => {
                         Cadastre-se
                       </NavLink>
                       <a href="#" target="_self" rel="noopener noreferrer"
-                      className="no-underline p-button border-round-md py-2 px-4">
+                      className="no-underline p-button border-round-md py-2 px-4 hover:bg-pink-500">
                         Entrar
                       </a>
                         <div className="relative">

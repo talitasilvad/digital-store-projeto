@@ -3,6 +3,9 @@ import Gallery from "../components/Gallery/Gallery";
 import { producImage } from "../components/Gallery/ImagesData";
 import ProductOptions from "../components/ProductOptions/ProductOptions";
 import { colorsOptions, sizesOptions } from "../components/ProductOptions/ProductOptionsData";
+import Section from "../components/Section/Section"
+import ProductListing from "../components/ProductListing/ProductListing"
+import { produtosAlta, produtosRelacionados } from "../components/ProductListing/ProductsData";
 
 const ProductViewPage = () => {
     return ( 
@@ -28,6 +31,13 @@ const ProductViewPage = () => {
                 <ProductOptions options={colorsOptions} shape="circle"/>
               </BuyBox>
           </div>
+          <Section 
+               title="Produtos relacionados"
+               titleAlign="left"
+                link={{ href: "/produtos", text: "Ver todos" }}
+              >
+                <ProductListing products={produtosRelacionados}/>
+              </Section>
         </>
      );
 }
