@@ -88,17 +88,19 @@ const Header = () => {
                     </IconField>
                   </div>
                 
-                      <NavLink to={"/cadastro"} className={styles.register}>
-                        Cadastre-se
-                      </NavLink>
-                      <a href="#" target="_self" rel="noopener noreferrer"
-                      className="no-underline p-button border-round-md py-2 px-4 hover:bg-pink-500">
-                        Entrar
-                      </a>
-                        <div className="relative">
-                        <img className={styles.cartImg} src="/src/assets/img/mini-cart.svg" alt="Carrinho de compra" />
-                        <span className="text-white text-xs font-bold border-circle px-2 py-1 absolute"
-                              style={{right: "-37%", backgroundColor: "var(--color-error)"}}>2</span>
+                      <div className='flex align-items-center gap-3'>
+                        <NavLink to={"/cadastro"} className={styles.register}>
+                          Cadastre-se
+                        </NavLink>
+                        <a href="#" target="_self" rel="noopener noreferrer"
+                        className="no-underline p-button border-round-md py-2 px-4 hover:bg-pink-500">
+                          Entrar
+                        </a>
+                          <div className="relative">
+                          <img className={styles.cartImg} src="/src/assets/img/mini-cart.svg" alt="Carrinho de compra" />
+                          <span className="text-white text-xs font-bold border-circle px-2 py-1 absolute"
+                                style={{right: "-37%", backgroundColor: "var(--color-error)"}}>2</span>
+                        </div>
                       </div>
                   </div>
                   <Nav>

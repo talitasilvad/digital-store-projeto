@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const ProductListing = ({products}) => {
     return ( 
         <>
-          <section className="flex flex-wrap overflow-hidden gap-7 ml-6">
+          <section className="flex justify-content-around flex-wrap overflow-hidden gap-5">
             {products.map((product) => (
                    <Link to={`/product/${product.id}` } key={product.id} className="no-underline">
                      <ProductCard
