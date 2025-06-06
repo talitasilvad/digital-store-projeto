@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from 'react-router-dom';
 import { Dropdown } from 'primereact/dropdown';
 import styles from "./ProductListingPage.module.css";
 import FilterGroup from "../components/FilterGroup/FilterGroup";
@@ -10,16 +11,44 @@ import { produtosAlta } from "../components/ProductListing/ProductsData";
 const ProductListingPage = () => {
   const [selectedOption, setSelectedOption] = useState(null);
 
+  const [searchParams] = useSearchParams();
+  const urlFilter = searchParams.get('filter'); 
+  
+  const [displayedProducts, setDisplayedProducts] = useState(produtosAlta);
+  const [searchTermDisplay, setSearchTermDisplay] = useState("");
+
   const options = [
     { name: 'Mais relevantes', code: 'relevant' },
     { name: 'Menor preço', code: 'lowest' },
     { name: 'Maior preço', code: 'highest' }
   ];
 
+  useEffect(() => {
+    let productsToDisplay = produtosAlta; 
+
+    if (urlFilter) {
+      const lowercasedFilter = urlFilter.toLowerCase();
+      productsToDisplay = produtosAlta.filter(product =>
+        product.name.toLowerCase().includes(lowercasedFilter) ||
+        (product.category && product.category.toLowerCase().includes(lowercasedFilter))
+      );
+      setSearchTermDisplay(urlFilter); 
+    } else {
+      setSearchTermDisplay(""); 
+    }
+
+    setDisplayedProducts(productsToDisplay); 
+
+  }, [urlFilter]);
+
   return (
     <>
     <div className={styles.productListingPage}>
-        <p>Resultados para “Tênis” - 5 produtos</p>
+        <p>
+          {searchTermDisplay
+            ? `Resultados para “${searchTermDisplay}” - ${displayedProducts.length} produtos`
+            : `Todos os Produtos - ${displayedProducts.length} produtos`}
+        </p>
       <div className={styles.customDropdown}>
           <span className={styles.fixedDropdown}>Ordenar por:</span>
           <Dropdown
@@ -42,7 +71,7 @@ const ProductListingPage = () => {
         </div>
         <div>
            <Section>
-              <ProductListing products={produtosAlta}/>
+            <ProductListing products={displayedProducts} />
            </Section>
         </div>
     </div>

@@ -4,7 +4,7 @@ import { InputText } from 'primereact/inputtext';
 import { IconField } from 'primereact/iconfield';
 import { InputIcon } from 'primereact/inputicon';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import { useState } from 'react'; 
 import Logo from "../Logo";
 
 const Nav = styled.nav`
@@ -52,7 +52,24 @@ const StyledNavLink = styled(NavLink)`
 `
 
 const Header = () => {
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState('')
+  const navigate = useNavigate();
+
+  const handleSearch = () => {
+    const searchTerm = search.trim(); 
+
+    if (searchTerm !== '') {
+      navigate(`/produtos?filter=${searchTerm}`); 
+    } else {
+      navigate('/produtos');
+    }
+  };
+
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      handleSearch();
+    }
+  };
     return ( 
         <>
         <header className={styles.header}>
@@ -61,10 +78,11 @@ const Header = () => {
                     <Logo variant="headerPink"/>
                     <div className={styles.headerSearch}>
                     <IconField iconPosition="right">
-                      <InputIcon className="pi pi-search" />
+                      <InputIcon className="pi pi-search" onClick={handleSearch} />
                       <InputText
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
+                        onKeyDown={handleKeyPress}
                         placeholder="Pesquisar produto..."
                       />
                     </IconField>

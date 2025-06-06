@@ -60,6 +60,7 @@
 
 .filterProducts{
     width: 50%;
+    max-width: 20%;
     height: 708px;
     padding: 2rem;
     margin-left: 3.5rem;

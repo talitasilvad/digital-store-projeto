@@ -65,9 +65,18 @@ export const produtosAlta = [
     {
         id: 8,
         category: "Headphones",
-        name: "Fone de ouvido preto",
+        name: "Fones de ouvido preto",
         imagem: "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         price: "$340.00"
+    },
+
+    {
+        id: 9,
+        category: "Bonés",
+        name: "Boné",
+        imagem: "https://images.unsplash.com/photo-1620743364195-6915419c6dc6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2Fwc3xlbnwwfHwwfHx8Mg%3D%3D",
+        price: "$149.99",
+        priceDiscount: "$200"
     },
 ];
 
