@@ -11,8 +11,14 @@
     margin: 0 auto;
 }
 
+.headerSearch {
+  flex-grow: 1;
+  text-align: center;
+}
+
 .headerSearch input{
-    width: 35rem;
+    width: 100%;
+    max-width: 35rem;
     padding: 0.955rem;
     margin-left: 0.5rem;
     background-color: #47474707;
@@ -30,6 +36,8 @@
 
 :global(.p-icon-field-right > .p-input-icon:last-of-type){
     color: #6666668e;
+    right: 2.50rem;
+    cursor: pointer;
 }
 
 :global(.p-icon-field > .p-input-icon){
@@ -111,4 +119,10 @@
 .navList li:hover .navLink::after,
 .navLinkActive::after{
     width: 100%;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px){
+
 }

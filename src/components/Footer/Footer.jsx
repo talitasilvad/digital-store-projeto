@@ -32,7 +32,7 @@ const Footer = () => {
                       <Information title="Contato" informations={contacLinks}/>
                   </div>
                 </div>
-                    <hr />
+        
                 <div className={styles.footerbottom}>
                     <p>© 2025 Digital Store</p>
                 </div>

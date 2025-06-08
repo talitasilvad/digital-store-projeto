@@ -78,6 +78,24 @@ export const produtosAlta = [
         price: "$149.99",
         priceDiscount: "$200"
     },
+
+    {
+        id: 10,
+        category: "Headphones",
+        name: "Fones de ouvido rosa",
+        imagem: "https://images.unsplash.com/photo-1613040809024-b4ef7ba99bc3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aGVhZHBob25lc3xlbnwwfHwwfHx8Mg%3D%3D",
+        price: "$149.99",
+        priceDiscount: "$200"
+    },
+
+     {
+        id: 11,
+        category: "Camisetas",
+        name: "Camisa com desenho",
+        imagem: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        price: "$149.99",
+        priceDiscount: "$200"
+    },
 ];
 
 
