@@ -121,8 +121,122 @@
     width: 100%;
 }
 
+/* ESTILIZAÇÕES PARA A VISUALIZAÇÃO DO SITE NO MOBILE */
+.sideBar,
+.buttonIcon{
+    display: none;
+}
+
+.mobileActions{
+    display: none;
+}
+
+.headerContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+:global(.p-sidebar-content){
+    display: flex;
+    flex-direction: column; 
+    height: 100%;        
+    padding: 0;
+}
+
+
 /* RESPONSIVIDADE */
 
 @media (max-width: 768px){
+    .header{
+        padding: 1rem 1.2rem;
+    }
+    .logoHeader{
+        margin: 0 auto;
+    }
 
+    .logoHeader img{
+        width: 238px;
+        height: 38px;
+    }
+
+    .sideBar{
+        display: block;
+    }
+
+    .headerSearch,
+    .desktopActions,
+    .navDesktop{
+        display: none !important;
+    }
+
+    .mobileActions{
+        display: flex;
+    }
+
+    .buttonIcon{
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        color: var(--color-dark-gray-2);
+        font-size: 24px;
+    }
+
+    :global(.pi.pi-bars){
+        font-size: 24px;
+    }
+
+    :global(.p-button){
+        margin-right: 0rem;
+        
+    }
+
+    div :global(.p-icon-field.p-icon-field-right){
+        right: 0.5rem;
+        top: 0.8rem;
+        color: var(--color-light-gray-2);
+    }
+
+    :global(.pi.pi-search){
+        font-size: 23px;
+    }
+
+    .cartImg{
+        margin-left: 0;
+    }
+
+    .sidebarNav{
+        padding: 1rem;
+        flex-grow: 1;
+    }
+    
+    .sidebarNav h2{
+        font-family: var(--font-principal);
+        font-weight: 700;
+        font-size: 24px;
+        letter-spacing: 0.75px;
+        color: var(--color-dark-gray-2);
+    }
+
+    .sidebarNav :global(ul){
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+    }
+
+    .mobileRegisterLogin{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid var(--color-light-gray-2);
+        padding: 1.5rem;
+        gap: 1rem;
+        position: relative;
+    }
+
+    .register{
+        margin: 0;
+    }
 }
