@@ -28,7 +28,9 @@ const Gallery = ({images, showThumbs, width, height, padding, radius, className}
                         <p className={styles.slideAdvertising}>Melhores ofertas personalizadas</p>
                         <div className={styles.title}>
                             <h2>Queima de estoque Nike</h2>
-                            <img className={styles.emojiFire} src="/public/produtosImg/firemoji.png" alt="" />
+                            <div className={styles.divEmojiFire}>
+                              <img className={styles.emojiFire} src="/public/produtosImg/emojifire.png" alt="" />
+                            </div>
                         </div>
                         <p className={styles.slideText}>Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
                         <a href="#" target="_self" rel="noopener noreferrer"

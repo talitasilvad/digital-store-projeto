@@ -55,9 +55,9 @@
 
 .emojiFire{
     position: absolute;
-    bottom: 1.5rem;
-    left: 23rem;
-    width: 150px;
+    top: 3rem;
+    left: 24rem;
+    width: 120px;
     height: auto;
 }
 
@@ -111,4 +111,84 @@
 :global(.p-galleria-thumbnail-prev),
 :global(.p-galleria-thumbnail-next) {
   display: none;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px){
+    .slideContainer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .slideAdvertising{
+        justify-content: center;
+        color: var(--color-primary);
+        margin-bottom: 0;
+    }
+
+    .customSlide{
+        padding: 1rem;
+        height: auto;
+    }
+
+    .title{
+        justify-content: center;
+        padding: 1rem 3rem;
+    }
+
+    .customSlide h2{
+        justify-content: center;
+        text-align: center;
+        width: 280px;
+        font-size: 2.5rem;
+        margin-bottom: 0;
+    }
+
+    .divEmojiFire{
+        position: relative;
+        right: 25.8rem;
+        bottom: 3.8rem;
+    }
+
+    .emojiFire{
+        width: 70px;
+    }
+
+    .slideText{
+        justify-content: center;
+        padding: 0 1rem;
+        font-size: 1rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .imgsContatiner{
+        order: -1;
+    }
+
+    .slideShoes{
+        width: 400px;
+        max-width: 490px;
+        height: auto;
+        z-index: 1;
+    }
+
+    .ornament{
+        position: absolute;
+        top: 0.5rem;
+        left: 19rem;
+        height: 140px;
+        z-index: 0; 
+    }
+
+    :global(.p-galleria .p-galleria-item-nav){
+        display: none;
+    }
+
+    :global(.px-7){
+        padding-left: 8rem !important;
+        padding-right: 8rem !important;
+    }
+
 }
