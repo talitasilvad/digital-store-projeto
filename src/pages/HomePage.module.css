@@ -47,7 +47,12 @@ span.homeSale{
     justify-content: center;
     gap: 3rem;
     margin-bottom: 4rem;
-    
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.homeIconsContainer::-webkit-scrollbar{
+    display: none;
 }
 
 .homeIcons{
@@ -156,10 +161,15 @@ img.homeIconsCap{
     z-index: 1;
 }
 
+.divImgBackg{
+    position: relative;
+    left: 6rem;
+    bottom: 22rem;
+
+}
+
 .imgBackground{
     position: absolute;
-    top: 2rem;
-    left: 9rem;
     z-index: 0;
 }
 
@@ -188,4 +198,87 @@ img.homeIconsCap{
     font-size: 16px;
     letter-spacing: 0.75px;
     margin-bottom: 2rem
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px){
+    .homeCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .homeCard img{
+        display: block;
+        width: 92%;      
+        height: auto;      
+        border-radius: 5px;
+    }
+
+    .homeCard a{
+        position: absolute;
+        background-color: var(--color-white);
+        color: var(--color-primary);
+        bottom: 1rem;
+        left: 2rem;
+    }
+
+    .homeIconsContainer{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 1rem;
+        gap: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .endHomePage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem;
+        gap: 6rem;
+    }
+
+    .endImg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .endP{
+        color: var(--color-warning);
+    }
+
+    .endOffer h2{
+        font-size: 28px;
+    }
+
+    .endPtext{
+        font-size: 14px;
+        letter-spacing: 0.25px;
+    }
+
+    .divImgBackg{
+        left: 0.5rem;
+        bottom: 12.2rem;
+    }
+
+    .imgBackground{
+        width: 300px;
+        height: 295px;
+    }
+
+    .shoesImg{
+        width: 301px;
+        height: 173px;
+    }
+
+    :global(.buttonEnd){
+        padding-left: 4rem !important;
+        padding-right: 4rem !important;
+    }
 }
