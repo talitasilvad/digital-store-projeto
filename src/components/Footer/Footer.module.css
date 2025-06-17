@@ -76,3 +76,20 @@
     font-family: var(--font-principal);
     font-size: 0.9rem;
 }
+
+@media (max-width: 768px){
+    .footerContent{
+        display: block;
+    }
+
+    .info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 0rem;
+        gap: 3rem;
+    }
+
+    .info li{
+        margin-top: 0.3rem;
+    }
+}
