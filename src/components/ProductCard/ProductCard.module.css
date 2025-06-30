@@ -88,7 +88,7 @@ img.cardImg:hover{
     }
 }
 
-@media (max-width: 375px){
+@media (max-width: 400px){
     .divCardImg{
         width: 165px;
         height: 175px;
