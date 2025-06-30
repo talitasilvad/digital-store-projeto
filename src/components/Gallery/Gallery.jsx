@@ -29,7 +29,7 @@ const Gallery = ({images, showThumbs, width, height, padding, radius, className}
                         <div className={styles.title}>
                             <h2>Queima de estoque Nike</h2>
                             <div className={styles.divEmojiFire}>
-                              <img className={styles.emojiFire} src="/produtosImg/emojifire.png" alt="" />
+                              <img className={styles.emojiFire} src="/produtosImg/emojiFire.png" alt="" />
                             </div>
                         </div>
                         <p className={styles.slideText}>Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
