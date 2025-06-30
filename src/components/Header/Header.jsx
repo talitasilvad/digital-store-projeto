@@ -124,7 +124,7 @@ const Header = () => {
                               </div>
                           </IconField>
                             <div className="relative">
-                              <img className={styles.cartImg} src="/src/assets/img/mini-cart.svg" alt="Carrinho de compra" />
+                              <img className={styles.cartImg} src={cartIcon} alt="Carrinho de compra" />
                               <span className="text-white text-xs font-bold border-circle px-2 py-1 absolute"
                                     style={{right: "-37%", backgroundColor: "var(--color-error)"}}>2</span>
                             </div>  
