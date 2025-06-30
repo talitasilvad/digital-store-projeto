@@ -29,7 +29,7 @@ const Gallery = ({images, showThumbs, width, height, padding, radius, className}
                         <div className={styles.title}>
                             <h2>Queima de estoque Nike</h2>
                             <div className={styles.divEmojiFire}>
-                              <img className={styles.emojiFire} src="/public/produtosImg/emojifire.png" alt="" />
+                              <img className={styles.emojiFire} src="/produtosImg/emojifire.png" alt="" />
                             </div>
                         </div>
                         <p className={styles.slideText}>Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.</p>
@@ -39,8 +39,8 @@ const Gallery = ({images, showThumbs, width, height, padding, radius, className}
                       </a>
                     </div>
                       <div className={styles.imgsContatiner}>
-                          <img className={styles.slideShoes} src="/public/produtosImg/White-Sneakers-PNG-Clipart 1.png" alt="" />
-                          <img className={styles.ornament} src="/public/produtosImg/Ornament 11.png" alt="" />
+                          <img className={styles.slideShoes} src="/produtosImg/White-Sneakers-PNG-Clipart 1.png" alt="" />
+                          <img className={styles.ornament} src="/produtosImg/Ornament 11.png" alt="" />
                       </div>
                 </div>
             </div>

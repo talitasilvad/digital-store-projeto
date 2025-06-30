@@ -23,7 +23,7 @@ const HomePage = () => {
                 <div className={styles.homeCollections}>
                     <div className={styles.homeCard}>
                        <span className={styles.homeSale}>30% OFF</span>
-                       <img src="/public/produtosImg/collection-1.png" alt="" />
+                       <img src="/produtosImg/collection-1.png" alt="" />
                        <a href="#" target="_self" rel="noopener noreferrer"
                          className="no-underline p-button border-round-md py-3 px-5">
                            Comprar
@@ -32,7 +32,7 @@ const HomePage = () => {
 
                     <div className={styles.homeCard}>
                        <span className={styles.homeSale}>30% OFF</span>
-                       <img src="/public/produtosImg/collection-2.png" alt="" />
+                       <img src="/produtosImg/collection-2.png" alt="" />
                        <a href="#" target="_self" rel="noopener noreferrer"
                          className="no-underline p-button border-round-md py-3 px-5">
                            Comprar
@@ -41,7 +41,7 @@ const HomePage = () => {
 
                     <div className={styles.homeCard}>
                        <span className={styles.homeSale}>30% OFF</span>
-                       <img src="/public/produtosImg/collection-3.png" alt="" />
+                       <img src="/produtosImg/collection-3.png" alt="" />
                        <a href="#" target="_self" rel="noopener noreferrer"
                          className="no-underline p-button border-round-md py-3 px-5">
                            Comprar
@@ -57,35 +57,35 @@ const HomePage = () => {
                <div className={styles.homeIconsContainer}>
                   <div className={styles.homeIcons}>
                      <div className={styles.iconWrapper}>
-                        <img src="/public/produtosImg/Frame-1.svg" alt="" />
+                        <img src="/produtosImg/Frame-1.svg" alt="" />
                      </div>
                      <p>Camisetas</p>
                   </div>
 
                   <div className={styles.homeIcons}>
                      <div className={styles.iconWrapper}>
-                        <img src="/public/produtosImg/Frame-2.svg" alt="" />
+                        <img src="/produtosImg/Frame-2.svg" alt="" />
                      </div>
                      <p>Calças</p>
                   </div>
 
                   <div className={styles.homeIcons}>
                      <div className={styles.capIcon} >
-                        <img className={styles.homeIconsCap} src="/public/produtosImg/Frame-3.png" alt="" />
+                        <img className={styles.homeIconsCap} src="/produtosImg/Frame-3.png" alt="" />
                      </div>
                      <p className={styles.pCap}>Bonés</p>
                   </div>
 
                   <div className={styles.homeIcons}>
                      <div className={styles.iconWrapper}>
-                        <img src="/public/produtosImg/Frame-4.svg" alt="" />
+                        <img src="/produtosImg/Frame-4.svg" alt="" />
                         </div>
                      <p>Headphones</p>
                   </div>
 
                   <div className={styles.homeIcons}>
                      <div className={styles.iconWrapper}>
-                        <img src="/public/produtosImg/Frame-5.svg" alt="" />
+                        <img src="/produtosImg/Frame-5.svg" alt="" />
                         </div>
                      <p>Tênis</p>
                   </div>
@@ -103,8 +103,8 @@ const HomePage = () => {
           {/* FINAL DA HOMEPAGE */}
           <div className={styles.endHomePage}>
             <div className={styles.endImgs}>
-               <img className={styles.shoesImg} src="/public/produtosImg/Laye-1-homeImg.png" alt="" />
-               <div className={styles.divImgBackg}><img className={styles.imgBackground} src="/public/produtosImg/Laye-2-homeImg.png" alt="" /></div>
+               <img className={styles.shoesImg} src="/produtosImg/Laye-1-homeImg.png" alt="" />
+               <div className={styles.divImgBackg}><img className={styles.imgBackground} src="/produtosImg/Laye-2-homeImg.png" alt="" /></div>
             </div>
             <div className={styles.endOffer}>
                <p className={styles.endP}>Oferta especial</p>
