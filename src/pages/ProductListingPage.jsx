@@ -3,7 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import { Dropdown } from 'primereact/dropdown';
 import styles from "./ProductListingPage.module.css";
 import FilterGroup from "../components/FilterGroup/FilterGroup";
-import { brand, category, gender, productCondition } from "../components/FilterGroup/optionsData";
+import { brand, category, gender, productCondition } from "../components/FilterGroup/OptionsData";
 import Section from "../components/Section/Section";
 import ProductListing from "../components/ProductListing/ProductListing";
 import { produtosAlta } from "../components/ProductListing/ProductsData";
