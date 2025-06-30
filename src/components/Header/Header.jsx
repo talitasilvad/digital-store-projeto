@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import styles from './Header.module.css'
+import cartIcon from '../../assets/img/mini-cart.svg';
 import { InputText } from 'primereact/inputtext';
 import { IconField } from 'primereact/iconfield';
 import { InputIcon } from 'primereact/inputicon';
@@ -110,7 +111,7 @@ const Header = () => {
                         </div>
                           <div className={styles.cartDesktop}>
                             <div className="relative">
-                            <img className={styles.cartImg} src="/src/assets/img/mini-cart.svg" alt="Carrinho de compra" />
+                            <img className={styles.cartImg} src={cartIcon} alt="Carrinho de compra" />
                             <span className="text-white text-xs font-bold border-circle px-2 py-1 absolute"
                                   style={{right: "-37%", backgroundColor: "var(--color-error)"}}>2</span>
                               </div>
