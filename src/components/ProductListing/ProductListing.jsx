@@ -4,22 +4,18 @@ import { Link } from "react-router-dom";
 const ProductListing = ({products}) => {
     return ( 
         <>
-          <section className="ml-2 md:ml-6 overflow-hidden">
-            <div className="grid">
-              {products.map((product) => (
-                  <div key={product.id} className="col-6 md:col-4 lg:col-3 p-2">
-                    <Link to={`/product/${product.id}`} className="no-underline">
-                      <ProductCard
-                        imagem={product.imagem}
-                        category={product.category}
-                        name={product.name}
-                        price={product.price}
-                        priceDiscount={product.priceDiscount}
-                      />
-                    </Link>
-                  </div>
-              ))}
-            </div>
+          <section className="flex flex-wrap ml-3 gap-2 lg:ml-6 lg:gap-5">
+            {products.map((product) => (
+                  <Link to={`/product/${product.id}`} key={product.id} className="no-underline">
+                    <ProductCard
+                      imagem={product.imagem}
+                      category={product.category}
+                      name={product.name}
+                      price={product.price}
+                      priceDiscount={product.priceDiscount}
+                    />
+                  </Link>
+                ))}
             </section>
         </>
      );
